@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore village history, facilities, culture, tourism and public services.">
+    <title>Our Village | Village Information Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- LOADING SCREEN -->
+<div class="loader" id="loader">
+    <div class="loader-icon"><i class="fas fa-leaf"></i></div>
+    <h2>Our Village</h2>
+    <p>Discover the beauty of village life...</p>
+</div>
+
+<!-- NAVIGATION -->
+<header class="navbar">
+    <a href="#home" class="logo">
+        <i class="fas fa-leaf"></i>
+        <span>Our<span class="green">Village.</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#culture">Culture</a>
+        <a href="#tourism">Tourism</a>
+        <a href="#schemes">Schemes</a>
+        <a href="#contact" class="nav-contact">Contact Us</a>
+    </nav>
+</header>
+
+<main>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content reveal">
+        <span class="hero-tag">
+            <i class="fas fa-sun"></i> Welcome to our beautiful village
+        </span>
+
+        <h1>Discover the Beauty<br>of <span>Village Life.</span></h1>
+
+        <p>
+            Explore our traditions, natural beauty, local facilities
+            and the wonderful people who make our village special.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#about" class="btn btn-primary">Explore Village <i class="fas fa-arrow-right"></i></a>
+            <a href="#facilities" class="btn btn-outline">Discover More</a>
+        </div>
+
+        <div class="hero-note">
+            <i class="fas fa-location-dot"></i>
+            A place where nature meets tradition
+        </div>
+    </div>
+
+    <div class="hero-bottom">
+        <span>Nature</span>
+        <span>Tradition</span>
+        <span>Community</span>
+    </div>
+</section>
+
+<!-- QUICK STATS -->
+<section class="stats-section">
+    <div class="stat">
+        <i class="fas fa-users"></i>
+        <h2 class="counter" data-target="5000">0</h2>
+        <p>Population</p>
+    </div>
+
+    <div class="stat">
+        <i class="fas fa-house"></i>
+        <h2 class="counter" data-target="1200">0</h2>
+        <p>Households</p>
+    </div>
+
+    <div class="stat">
+        <i class="fas fa-school"></i>
+        <h2 class="counter" data-target="8">0</h2>
+        <p>Educational Institutions</p>
+    </div>
+
+    <div class="stat">
+        <i class="fas fa-tree"></i>
+        <h2 class="counter" data-target="15">0</h2>
+        <p>Years of Development</p>
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="section about-section" id="about">
+    <div class="section-heading reveal">
+        <span class="subheading">GET TO KNOW US</span>
+        <h2>About Our <span>Village</span></h2>
+        <p>Discover our identity, history and the people behind our community.</p>
+    </div>
+
+    <div class="about-grid">
+        <div class="about-image reveal">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1000"
+                 alt="Green agricultural fields">
+            <div class="image-label">
+                <i class="fas fa-heart"></i> Our beautiful homeland
+            </div>
+        </div>
+
+        <div class="about-content reveal">
+            <h3>A place filled with nature, culture and unity.</h3>
+            <p>
+                Our Village is a community where tradition, agriculture
+                and modern development come together. Surrounded by
+                greenery and natural beauty, it represents the simplicity
+                and warmth of rural life.
+            </p>
+            <p>
+                From cultural celebrations to educational development,
+                our village continues to grow while preserving its
+                traditional values.
+            </p>
+
+            <div class="about-points">
+                <div><i class="fas fa-check-circle"></i> Rich cultural heritage</div>
+                <div><i class="fas fa-check-circle"></i> Strong community relationships</div>
+                <div><i class="fas fa-check-circle"></i> Agricultural traditions</div>
+                <div><i class="fas fa-check-circle"></i> Growing infrastructure</div>
+            </div>
+
+            <a href="#contact" class="text-link">Get in touch <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- FACILITIES -->
+<section class="section facilities-section" id="facilities">
+    <div class="section-heading reveal">
+        <span class="subheading">WHAT WE OFFER</span>
+        <h2>Village <span>Facilities</span></h2>
+        <p>Important services and facilities that support everyday life.</p>
+    </div>
+
+    <div class="card-grid">
+
+        <article class="info-card reveal">
+            <div class="card-icon purple"><i class="fas fa-school"></i></div>
+            <h3>Education</h3>
+            <p>Schools, learning centres and educational opportunities for children and young people.</p>
+            <a href="#contact">Learn More <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="info-card reveal">
+            <div class="card-icon red"><i class="fas fa-hospital"></i></div>
+            <h3>Healthcare</h3>
+            <p>Information about local hospitals, primary health centres and medical services.</p>
+            <a href="#contact">Learn More <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="info-card reveal">
+            <div class="card-icon blue"><i class="fas fa-bus"></i></div>
+            <h3>Transportation</h3>
+            <p>Local roads, bus connectivity and transportation facilities.</p>
+            <a href="#contact">Learn More <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="info-card reveal">
+            <div class="card-icon green"><i class="fas fa-droplet"></i></div>
+            <h3>Water Supply</h3>
+            <p>Information about drinking water, water resources and sanitation.</p>
+            <a href="#contact">Learn More <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="info-card reveal">
+            <div class="card-icon orange"><i class="fas fa-bolt"></i></div>
+            <h3>Electricity</h3>
+            <p>Electricity services, street lighting and power-related information.</p>
+            <a href="#contact">Learn More <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="info-card reveal">
+            <div class="card-icon pink"><i class="fas fa-tractor"></i></div>
+            <h3>Agriculture</h3>
+            <p>Farming activities, crops, irrigation and agricultural resources.</p>
+            <a href="#contact">Learn More <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+    </div>
+</section>
+
+<!-- CULTURE -->
+<section class="section culture-section" id="culture">
+    <div class="section-heading reveal">
+        <span class="subheading">OUR IDENTITY</span>
+        <h2>Culture & <span>Traditions</span></h2>
+        <p>Celebrating the traditions and values that bring our people together.</p>
+    </div>
+
+    <div class="culture-grid">
+        <div class="culture-card reveal">
+            <img src="https://images.unsplash.com/photo-1604608672516-4f2e9c5e9a6c?w=800" alt="Traditional Indian festival">
+            <div class="culture-info">
+                <h3>Festivals</h3>
+                <p>Celebrations that bring families and communities together.</p>
+            </div>
+        </div>
+
+        <div class="culture-card reveal">
+            <img src="https://images.unsplash.com/photo-1590736969955-71cc94901144?w=800" alt="Traditional Indian food">
+            <div class="culture-info">
+                <h3>Traditional Food</h3>
+                <p>Discover local dishes and traditional cooking.</p>
+            </div>
+        </div>
+
+        <div class="culture-card reveal">
+            <img src="https://images.unsplash.com/photo-1504198322253-cfa87a0ff25f?w=800" alt="Indian traditional dance">
+            <div class="culture-info">
+                <h3>Arts & Heritage</h3>
+                <p>Traditional arts, music, dance and cultural activities.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TOURISM -->
+<section class="section tourism-section" id="tourism">
+    <div class="section-heading reveal">
+        <span class="subheading">EXPLORE THE SURROUNDINGS</span>
+        <h2>Places to <span>Explore</span></h2>
+        <p>Discover the natural and cultural attractions of our region.</p>
+    </div>
+
+    <div class="tourism-grid">
+        <div class="tour-card reveal">
+            <img src="https://images.unsplash.com/photo-1511497584788-876760111969?w=900" alt="Green nature">
+            <div class="tour-info">
+                <span><i class="fas fa-leaf"></i> Nature</span>
+                <h3>Green Landscapes</h3>
+                <p>Enjoy the beauty of greenery and peaceful surroundings.</p>
+            </div>
+        </div>
+
+        <div class="tour-card reveal">
+            <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=900" alt="Indian temple">
+            <div class="tour-info">
+                <span><i class="fas fa-landmark"></i> Heritage</span>
+                <h3>Places of Worship</h3>
+                <p>Explore local religious and cultural landmarks.</p>
+            </div>
+        </div>
+
+        <div class="tour-card reveal">
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=900" alt="Lake and mountain">
+            <div class="tour-info">
+                <span><i class="fas fa-water"></i> Scenery</span>
+                <h3>Water Resources</h3>
+                <p>Discover ponds, lakes and natural water bodies.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GOVERNMENT SCHEMES -->
+<section class="section schemes-section" id="schemes">
+    <div class="section-heading reveal">
+        <span class="subheading">PUBLIC INFORMATION</span>
+        <h2>Government <span>Schemes</span></h2>
+        <p>Explore useful public welfare programmes and official resources.</p>
+    </div>
+
+    <div class="scheme-grid">
+        <div class="scheme-card reveal">
+            <i class="fas fa-house-chimney"></i>
+            <h3>Housing Support</h3>
+            <p>Information about rural housing assistance programmes.</p>
+            <a href="https://pmayg.nic.in/" target="_blank" rel="noopener">Official Website <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+
+        <div class="scheme-card reveal">
+            <i class="fas fa-tractor"></i>
+            <h3>Farmer Support</h3>
+            <p>Information about agricultural welfare and farmer support.</p>
+            <a href="https://pmkisan.gov.in/" target="_blank" rel="noopener">Official Website <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+
+        <div class="scheme-card reveal">
+            <i class="fas fa-briefcase"></i>
+            <h3>Rural Employment</h3>
+            <p>Learn about rural employment and livelihood programmes.</p>
+            <a href="https://nrega.nic.in/" target="_blank" rel="noopener">Official Website <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- ANNOUNCEMENTS -->
+<section class="section announcement-section" id="announcements">
+    <div class="section-heading reveal">
+        <span class="subheading">STAY UPDATED</span>
+        <h2>Latest <span>Announcements</span></h2>
+        <p>Important updates and community notices.</p>
+    </div>
+
+    <div class="announcement-list" id="announcementList">
+        <div class="announcement reveal">
+            <div class="announcement-icon"><i class="fas fa-bullhorn"></i></div>
+            <div>
+                <span class="notice-label">Community Notice</span>
+                <h3>Village cleanliness awareness</h3>
+                <p>Sample notice: Add verified cleanliness programme details here.</p>
+            </div>
+        </div>
+
+        <div class="announcement reveal">
+            <div class="announcement-icon"><i class="fas fa-calendar-alt"></i></div>
+            <div>
+                <span class="notice-label">Upcoming Event</span>
+                <h3>Community cultural celebration</h3>
+                <p>Sample notice: Update with the confirmed event date and location.</p>
+            </div>
+        </div>
+
+        <div class="announcement reveal">
+            <div class="announcement-icon"><i class="fas fa-info-circle"></i></div>
+            <div>
+                <span class="notice-label">Public Information</span>
+                <h3>Village service information</h3>
+                <p>Sample notice: Add current public service announcements here.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section gallery-section" id="gallery">
+    <div class="section-heading reveal">
+        <span class="subheading">VISUAL STORIES</span>
+        <h2>Village <span>Gallery</span></h2>
+        <p>A glimpse of rural beauty and everyday life.</p>
+    </div>
+
+    <div class="gallery-grid">
+        <img class="gallery-img reveal" src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800" alt="Agricultural landscape">
+        <img class="gallery-img reveal" src="https://images.unsplash.com/photo-1511497584788-876760111969?w=800" alt="Green forest">
+        <img class="gallery-img reveal" src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=800" alt="Sunrise landscape">
+        <img class="gallery-img reveal" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800" alt="Mountain lake">
+        <img class="gallery-img reveal" src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800" alt="Forest">
+        <img class="gallery-img reveal" src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=800" alt="Nature">
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact-section" id="contact">
+    <div class="section-heading reveal">
+        <span class="subheading">WE ARE HERE TO HELP</span>
+        <h2>Contact <span>Us</span></h2>
+        <p>Have a question or suggestion? Send us a message.</p>
+    </div>
+
+    <div class="contact-grid">
+        <div class="contact-info reveal">
+            <h3>Let's connect with our community.</h3>
+            <p>Use this section to contact the village information portal team.</p>
+
+            <div class="contact-detail">
+                <i class="fas fa-location-dot"></i>
+                <div><strong>Address</strong><p>Village Panchayat Office, Your Village</p></div>
+            </div>
+
+            <div class="contact-detail">
+                <i class="fas fa-envelope"></i>
+                <div><strong>Email</strong><p>yourvillage@example.com</p></div>
+            </div>
+
+            <div class="contact-detail">
+                <i class="fas fa-phone"></i>
+                <div><strong>Phone</strong><p>+91 XXXXX XXXXX</p></div>
+            </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="text" id="subject" placeholder="Subject" required>
+            <textarea id="message" placeholder="Write your message..." rows="5" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+            <p id="formMessage" aria-live="polite"></p>
+        </form>
+    </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <a href="#home" class="logo">
+                <i class="fas fa-leaf"></i>
+                <span>Our<span class="green">Village.</span></span>
+            </a>
+            <p>Connecting people with their village through information, culture and community.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="#about">About Us</a>
+            <a href="#facilities">Facilities</a>
+            <a href="#tourism">Tourism</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Explore</h3>
+            <a href="#culture">Culture</a>
+            <a href="#schemes">Government Schemes</a>
+            <a href="#announcements">Announcements</a>
+            <a href="#gallery">Gallery</a>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>© <span id="year"></span> Our Village Information Portal. All rights reserved.</p>
+        <p>Made with <i class="fas fa-heart"></i> for our community.</p>
+    </div>
+</footer>
+
+<!-- BACK TO TOP -->
+<button id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
